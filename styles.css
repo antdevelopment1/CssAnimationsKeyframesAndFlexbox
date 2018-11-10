@@ -1,0 +1,13 @@
+body {
+    background-color: teal;
+}
+
+h1:hover {
+    background-color: white;
+    opacity: .7;
+}
+
+button:hover {
+    color: blue;
+    opacity: .7;
+}
