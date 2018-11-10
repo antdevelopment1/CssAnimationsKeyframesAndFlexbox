@@ -2,6 +2,10 @@ body {
     background-color: teal;
 }
 
+
+/* ======================================= */
+     /* Hover Psuedo Effect on Hover */
+/* ======================================= */
 h1:hover {
     background-color: white;
     opacity: .7;
@@ -10,4 +14,19 @@ h1:hover {
 button:hover {
     color: blue;
     opacity: .7;
+}
+
+/* ======================================= */
+      /* Focus Psuedo Class on Hover */
+/* ======================================= */
+
+input:focus {
+    background-color: red;
+    opacity: .6;
+}
+
+button:focus {
+    border-radius: 10px;
+    background-color: yellow;
+    opacity: .8;
 }
