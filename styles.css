@@ -17,9 +17,9 @@ button:hover {
 }
 
 /* ======================================= */
-      /* Focus Psuedo Class on Hover */
+         /* Focus Psuedo Class */
 /* ======================================= */
-
+/* Focus is a state that can persist whether the user is interacting with the element or not */
 input:focus {
     background-color: red;
     opacity: .6;
@@ -28,5 +28,18 @@ input:focus {
 button:focus {
     border-radius: 10px;
     background-color: yellow;
-    opacity: .8;
+    opacity: .7;
+}
+
+/* ============================================= */
+     /* Active PsuedoClass Effect on Hover */
+/* =============================================*/
+/* Active is when a user clicks on or taps on something in the moment. It is only active at that point */
+button:active {
+    background-color: orange;
+    font-size: 30px;
+}
+
+h1:active, p:active {
+    color: yellow;
 }
