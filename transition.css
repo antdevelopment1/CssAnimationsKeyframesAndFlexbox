@@ -1,0 +1,35 @@
+.box {
+    background: red;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.box:hover {
+    background-color: blue;
+    transform-origin: top left;
+    transform: scale(2);
+    border-radius: 50px;
+}
+
+/* ==================== */
+/* Transition Duration */
+/* ==================== */
+
+.animated {
+    transition-duration: 1s;
+}
+
+/* ==================== */
+/* Transition Property */
+/* ==================== */
+
+.animated {
+    /* Targets the all properties in tranform not just scale or rotate or we can pass an indiviual value that we want the transition to occur on such as background color or color or scale etc... */
+    transition-property: border-radius, background-color hover;
+    transition-duration: 2s;
+}
