@@ -1,0 +1,25 @@
+p {
+    width: 50px;
+    height:50px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 2px solid red;
+    text-align: center;
+}
+
+/* Transform origin is the center point of the object. This will rotate it clockwise.*/
+/* Negative degree values are counter clockwise. Decimal values can be used as well. */
+.transformed {
+    background-color: #3498db;
+    transform: rotate(45deg);
+    /* In this example our scale will overwrite our rotate transform. The way to fix it is in the examsple below. */
+    transform: scale(.5);
+    transform-origin: right botttomm;
+}
+
+.transformed {
+    background-color: #3498db;
+    /* Short hand for combined transforms that will not overwrite each other. */
+    transform: rotate(90deg) scale(.5);
+    transform-origin: right botttomm;
+}
