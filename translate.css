@@ -1,0 +1,20 @@
+/* If we've already translated something pver, if then further translate the object it is still working with the original order. */
+p {
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+}
+
+p.move-right {
+    background-color: #3498db;
+    transform: translateX(100px);
+}
+
+p.move-down {
+    background-color: red;
+    transform: translateY(20px);
+}
+
+p:hover {
+    transform: translate(20px, 20px);
+}
