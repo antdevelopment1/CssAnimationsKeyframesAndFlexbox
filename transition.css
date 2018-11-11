@@ -20,16 +20,42 @@
 /* Transition Duration */
 /* ==================== */
 
-.animated {
-    transition-duration: 1s;
-}
+/* .animated { */
+    /* transition-duration: 1s; */
+/* } */
 
 /* ==================== */
 /* Transition Property */
 /* ==================== */
 
-.animated {
+/* .animated { */
     /* Targets the all properties in tranform not just scale or rotate or we can pass an indiviual value that we want the transition to occur on such as background color or color or scale etc... */
-    transition-property: border-radius, background-color hover;
+    /* transition-property: border-radius, background-color; */
+    /* transition-duration: 5s; */
+    /* transition-delay: 2s, 5s; */
+/* } */
+
+
+/* ==================== */
+/* Transition Delay */
+/* ==================== */
+/* .animated { */
+    /* Targets the all properties in tranform not just scale or rotate or we can pass an indiviual value that we want the transition to occur on such as background color or color or scale etc... */
+    /* transition-property: border-radius, background-color;
+    transition-duration: 3s;
+    transition-delay: 2s, 5s; */
+/* } */
+
+/* =========================== */
+/* Transition Timing Function */
+/* =========================== */
+
+.animated {
+    transition-property: transform;
     transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.box:hover {
+    transform: translateX(300px);
 }
